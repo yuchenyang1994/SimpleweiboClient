@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="loding"
+        android:id="@+id/tv_weibomore_username"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_blogmore_content" />
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bird0_1"
+        android:id="@+id/iv_weibomore_uphoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="New Text"
+        android:textSize="10dp"
+        android:id="@+id/tv_blogmore_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iv_weibomore_uphoto" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:id="@+id/btn_add_answer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:textSize="10dp"
+            android:hint="评论......"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_textanswer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btn_add_answer" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/listview_answer"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/relativeLayout" />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_addfriends"
+        android:layout_above="@+id/tv_blogmore_content"
+        android:layout_toEndOf="@+id/tv_weibomore_username" />
+
+    <GridView
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:columnWidth="50dp"
+        android:stretchMode="columnWidth"
+        android:id="@+id/gridView_blog_image"
+        android:layout_below="@+id/tv_blogmore_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/listview_answer" />
+</RelativeLayout>

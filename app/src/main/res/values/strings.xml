@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SimpleWeibo</string>
+    <string name="login_title">登陆</string>
+    <string name="login_btn">登陆</string>
+    <string name="login_register_btn">注册</string>
+    <string name="login_welcom">请登陆并分享你的见闻</string>
+    <string name="logn_username">请输入你的用户名</string>
+    <string name="login_userpassword">请输入你的密码</string>
+    <string name="register_welcom">让我们更加了解你</string>
+    <string name="register_btn">立即注册</string>
+    <string name="register_back_btn">返回登陆</string>
+    <string name="index_name">微博</string>
+</resources>

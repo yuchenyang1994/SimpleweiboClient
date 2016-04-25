@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_register_title"
+        android:src="@drawable/long_register"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_register_username"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/logn_username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_welcom"
+        android:textSize="20dp"
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/image_register_title"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/ed_password_registe"
+        android:layout_below="@+id/ed_register_username"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:hint="@string/login_userpassword"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_sex"
+        android:layout_below="@+id/ed_password_registe"
+        android:layout_alignParentStart="true"
+        android:entries="@array/sex"
+        />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_btn"
+        android:id="@+id/register_btn_regist"
+        android:layout_above="@+id/register_btn_back"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_back_btn"
+        android:id="@+id/register_btn_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
