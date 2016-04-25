@@ -1,0 +1,2 @@
+# SimpleweiboClient
+这个是简单微博的安卓客户端，使用将服务器端的地址更改再HomeParent中更改
